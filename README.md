@@ -7,9 +7,9 @@ cd thirdparty/src/aws-sdk-cpp
 mkdir build && cd build
 
 cmake .. \
-	-DBUILD_ONLY="s3" \
+    -DBUILD_ONLY="s3" \
     -DCMAKE_BUILD_TYPE=Release \
-	-DCMAKE_INSTALL_PREFIX=$(pwd)/../../../bin \
+    -DCMAKE_INSTALL_PREFIX=$(pwd)/../../../bin \
 
 make
 make install
